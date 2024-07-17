@@ -1,88 +1,134 @@
-/* css */
-  body {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
-  form {
-    padding: 12px;
-    background-color: #f0f8ff;
-    border-radius: 8px;
-  }
+/* bagian kalkulator */
+form {
+  padding: 12px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+}
 
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* resposive screen */
+@media only screen and (max-width: 725px){ 
   main {
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
   }
+}
 
-  .main-title  {
-    text-align: center;
-  }
+.main-title {
+  text-align: center;
+}
 
-  .main-content {
-    flex: 1;
-    padding: 12px
-  }
+.main-content {
+  flex: 1;
+  padding: 12px;
+}
 
-  .main-article {
-    flex: 1;
-    padding: 12px;
-    background-color: rgb(255, 233, 236);
-    border-radius: 8px;
-  }
+.main-article {
+  flex: 1;
+  padding: 12px;
+  background-color: rgb(255, 233, 236);
+  border-radius: 8px;
+}
 
-  .input-title {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
+/* untuk menghilangkan underline */
+a {
+  text-decoration: none
+}
 
-  .result-content {
-    text-align: center;
-    background-color: aliceblue;
-    border-radius: 8px;
-    padding: 12px;
-  }
+.input-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
-  .submit-btn {
-    background-color: aqua;
-    border: 0px;
-    height: 35px;
-    width: 90px;
-    border-radius: 8px;
-    font-weight: 500;
-  }
+/* bagian hasil */
+.result-content {
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 8px;
+  padding: 12px;
+}
 
-  .reset-btn {
-    background-color:whitesmoke;
-    border: 0px;
-    height: 32px;
-    width: 70px;
-    border-radius: 8px;
-    font-weight: 500;
-  }
+button {
+  background-color:darkturquoise;
+  color: white;
+  border: 0px;
+  height: 30px;
+  border-radius: 4px;
+  font-weight: 500;
+}
 
-  input[type=number] {
-    width: 100%;
-    padding: 6px 12px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 3px solid #d0e2f1;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-    border-radius: 5px;
-  }
+/* tombol submit */
+.submit-btn {
+  background-color:darkturquoise;
+  color: white;
+  border: 0px;
+  height: 35px;
+  width: 90px;
+  border-radius: 8px;
+  font-weight: 500;
+}
 
-  input[type=number]:focus {
-    border: 3px solid #f09090
-  }
+/* tombol reset */
+.reset-btn {
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid gainsboro;
+  height: 35px;
+  width: 70px;
+  border-radius: 8px;
+  font-weight: 500;
+}
 
-  .form-content {
-    margin-bottom: 8px;
-    margin-top: 4px;
-  }
+/* area input */
+input[type='number'] {
+  width: 100%;
+  padding: 6px 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #d0e2f1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 5px;
+}
 
-  .form-content-radio {
-    margin-bottom: 12px;
-    margin-top: 4px;
-  }
+/* fokus ketika input */
+input[type='number']:focus {
+  border: 3px solid #ad9df0;
+}
+
+/* untuk menghilangkan panah */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-content {
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+
+.form-check-radio {
+  margin-bottom: 12px;
+  margin-top: 4px;
+}
+
+footer {
+  background:cornsilk;
+  text-align: center;
+  padding: 10px;
+}
+
+.copyright {
+  padding: 10px;
+  margin-top: 20px;
+}
